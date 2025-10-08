@@ -14,7 +14,7 @@ export async function userRoutes(app: FastifyInstance) {
 
     appWithZod.post("/register", {
         preHandler: fileValidationMiddleware({
-            allowedTypes: ["video/mp4", "video/webm"],
+            allowedTypes: ["video/mp4", "video/webm", "video/quicktime", "video/x-matroska", "video/3gpp"],
             limits: { fileSize: FILE_SIZE * 1024 * 1024 },
         }),
         schema: {
