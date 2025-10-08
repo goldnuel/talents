@@ -16,7 +16,6 @@ import ZodInput from "../ui/ZodInput";
 import Button from "../ui/Button";
 import ErrorText from "./ErrorText";
 
-
 //Icons
 import { Android, Lock, Unlock } from "iconsax-react";
 
@@ -33,6 +32,7 @@ const Signin = () => {
     // Data validation
     const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<EmailAuth>({
         resolver: zodResolver(emailAuthSchema),
+        reValidateMode: "onBlur"
     });
 
 
