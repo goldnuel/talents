@@ -5,12 +5,12 @@ import multipart from '@fastify/multipart';
 import { serializerCompiler, validatorCompiler } from 'fastify-type-provider-zod';
 
 //Utils and Configs
-import { sendResponse } from './utils/response.utils.ts';
-import { setupSwagger } from './utils/swagger.ts';
-import { FILE_SIZE, LIVE_ORIGIN, LOCAL_ORIGIN } from './config.ts';
+import { sendResponse } from './utils/response.utils.js';
+import { setupSwagger } from './utils/swagger.js';
+import { FILE_SIZE, LIVE_ORIGIN, LOCAL_ORIGIN } from './config.js';
 
 //Routes
-import { userRoutes } from './modules/user/user.routes.ts';
+import { userRoutes } from './modules/user/user.routes.js';
 
 export const app: FastifyInstance = Fastify({ logger: { level: 'info' }, trustProxy: 3 });
 

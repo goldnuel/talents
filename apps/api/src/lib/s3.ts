@@ -1,7 +1,7 @@
 import { S3Client } from "@aws-sdk/client-s3";
 
 //Configs
-import { BUCKET_NAME, BUCKET_REGION, ACCESS_KEY, SECRET_ACCESS_KEY } from "../config.ts";
+import { BUCKET_NAME, BUCKET_REGION, ACCESS_KEY, SECRET_ACCESS_KEY } from "../config.js";
 
 export const config = {
     bucket: BUCKET_NAME,

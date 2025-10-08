@@ -1,7 +1,7 @@
-import { buildApp } from './app.ts';
+import { buildApp } from './app.js';
 
 //Config
-import { PORT } from './config.ts';
+import { PORT } from './config.js';
 
 const startServer = async () => {
     const app = buildApp();

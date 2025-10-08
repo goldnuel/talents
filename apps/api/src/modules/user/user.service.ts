@@ -2,18 +2,18 @@ import { PutObjectCommand } from "@aws-sdk/client-s3";
 import { v4 as uuidv4 } from "uuid";
 
 //Packages
-import { prisma } from "../../lib/prisma.ts";
-import { sendEmail } from "../../lib/email.ts";
+import { prisma } from "../../lib/prisma.js";
+import { sendEmail } from "../../lib/email.js";
 
 //Libs
-import { s3, config } from "../../lib/s3.ts";
+import { s3, config } from "../../lib/s3.js";
 
 //Utils
-import { generateUserId } from "../../utils/generate.ts";
+import { generateUserId } from "../../utils/generate.js";
 
 //Templates and Configs
-import RegisterTemplate from "../../templates/Registration.ts";
-import { LINK } from "../../config.ts";
+import RegisterTemplate from "../../templates/Registration.js";
+import { LINK } from "../../config.js";
 
 export async function createUser(input: CreateUserInput) {
 

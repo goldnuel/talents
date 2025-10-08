@@ -1,10 +1,10 @@
 import type { FastifyRequest, FastifyReply } from "fastify";
 
 //Services and Schemas
-import { createUser } from "./user.service.ts";
+import { createUser } from "./user.service.js";
 
 //Utils
-import { sendResponse } from "../../utils/response.utils.ts";
+import { sendResponse } from "../../utils/response.utils.js";
 
 export async function RegisterUserHandler(request: FastifyRequest, reply: FastifyReply) {
 

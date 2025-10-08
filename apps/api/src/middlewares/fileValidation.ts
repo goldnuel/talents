@@ -1,10 +1,10 @@
 import type { FastifyReply, FastifyRequest } from "fastify";
 
 //Schemas
-import { registerSchema } from "../modules/user/user.schema.ts";
+import { registerSchema } from "../modules/user/user.schema.js";
 
 //Utils
-import { sendResponse } from "../utils/response.utils.ts";
+import { sendResponse } from "../utils/response.utils.js";
 
 
 export const fileValidationMiddleware = (options: FileValidationOptions) => {

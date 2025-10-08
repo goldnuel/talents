@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "description": "backend code for goldnuel",
   "type": "module",
+  "main": "dist/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
@@ -19,7 +20,6 @@
     "@fastify/swagger": "^9.5.1",
     "@fastify/swagger-ui": "^5.2.3",
     "@goldnuel/db": "*",
-    "esbuild": "^0.25.10",
     "fastify": "^5.4.0",
     "fastify-type-provider-zod": "^5.0.2",
     "zod": "^4.0.14"

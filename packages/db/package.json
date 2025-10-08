@@ -1,7 +1,6 @@
 {
   "name": "@goldnuel/db",
   "version": "1.0.0",
-  "main": "index.ts",
   "prisma": {
     "schema": "prisma/schema.prisma"
   },

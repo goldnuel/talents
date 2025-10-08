@@ -2,11 +2,11 @@ import type { FastifyInstance } from "fastify";
 import type { ZodTypeProvider } from "fastify-type-provider-zod";
 
 //Controllers
-import { RegisterUserHandler } from "./user.controller.ts";
+import { RegisterUserHandler } from "./user.controller.js";
 
 //Middlewares and Configs
-import { fileValidationMiddleware } from "../../middlewares/fileValidation.ts";
-import { FILE_SIZE } from "../../config.ts";
+import { fileValidationMiddleware } from "../../middlewares/fileValidation.js";
+import { FILE_SIZE } from "../../config.js";
 
 export async function userRoutes(app: FastifyInstance) {
 
